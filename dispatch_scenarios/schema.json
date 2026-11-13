@@ -1,0 +1,45 @@
+{
+  "tiles": {
+    "keys": [
+      "tile_id"
+    ],
+    "columns": [
+      "tile_id",
+      "day",
+      "origin_x",
+      "origin_y",
+      "cell_size",
+      "rows",
+      "cols",
+      "values",
+      "priority",
+      "classification_version"
+    ]
+  },
+  "plots": {
+    "keys": [
+      "plot_id"
+    ],
+    "columns": [
+      "plot_id",
+      "xmin",
+      "ymin",
+      "xmax",
+      "ymax"
+    ]
+  },
+  "checks": {
+    "keys": [
+      "check_id"
+    ],
+    "columns": [
+      "check_id",
+      "plot_id",
+      "x",
+      "y",
+      "day",
+      "wet",
+      "selection_reason"
+    ]
+  }
+}

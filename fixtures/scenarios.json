@@ -1,1 +1,0 @@
-{"scenarios":[{"scenario_id":"dry","roads":[["a","b",true],["b","c",true]]},{"scenario_id":"storm","roads":[["a","b",true],["b","c",false]]}]}

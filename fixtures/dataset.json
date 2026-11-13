@@ -1,0 +1,211 @@
+{
+  "generation": "domain-10-v1",
+  "tables": {
+    "tiles": [
+      {
+        "tile_id": "tile0",
+        "day": "2025-06-01",
+        "origin_x": 0,
+        "origin_y": 0,
+        "cell_size": 10,
+        "rows": 4,
+        "cols": 4,
+        "values": [
+          [
+            null,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            null
+          ],
+          [
+            1,
+            1,
+            null,
+            1
+          ]
+        ],
+        "priority": 0,
+        "classification_version": "wet-v1"
+      },
+      {
+        "tile_id": "tile1",
+        "day": "2025-06-01",
+        "origin_x": 15,
+        "origin_y": 5,
+        "cell_size": 10,
+        "rows": 4,
+        "cols": 4,
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            null
+          ],
+          [
+            1,
+            1,
+            null,
+            1
+          ],
+          [
+            0,
+            null,
+            0,
+            0
+          ]
+        ],
+        "priority": 1,
+        "classification_version": "wet-v1"
+      },
+      {
+        "tile_id": "tile2",
+        "day": "2025-06-03",
+        "origin_x": 0,
+        "origin_y": 0,
+        "cell_size": 5,
+        "rows": 4,
+        "cols": 4,
+        "values": [
+          [
+            0,
+            0,
+            0,
+            null
+          ],
+          [
+            1,
+            1,
+            null,
+            1
+          ],
+          [
+            0,
+            null,
+            0,
+            0
+          ],
+          [
+            null,
+            0,
+            0,
+            0
+          ]
+        ],
+        "priority": 2,
+        "classification_version": "wet-v1"
+      },
+      {
+        "tile_id": "tile3",
+        "day": "2025-06-03",
+        "origin_x": 5,
+        "origin_y": 5,
+        "cell_size": 10,
+        "rows": 4,
+        "cols": 4,
+        "values": [
+          [
+            1,
+            1,
+            null,
+            1
+          ],
+          [
+            0,
+            null,
+            0,
+            0
+          ],
+          [
+            null,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "priority": 3,
+        "classification_version": "wet-v1"
+      }
+    ],
+    "plots": [
+      {
+        "plot_id": "p0",
+        "xmin": 2,
+        "ymin": 3,
+        "xmax": 14,
+        "ymax": 32
+      },
+      {
+        "plot_id": "p1",
+        "xmin": 17,
+        "ymin": 3,
+        "xmax": 29,
+        "ymax": 32
+      },
+      {
+        "plot_id": "p2",
+        "xmin": 32,
+        "ymin": 3,
+        "xmax": 44,
+        "ymax": 32
+      }
+    ],
+    "checks": [
+      {
+        "check_id": "c0",
+        "plot_id": "p0",
+        "x": 8,
+        "y": 10,
+        "day": "2025-06-03",
+        "wet": false,
+        "selection_reason": "巡查优先关注地块"
+      },
+      {
+        "check_id": "c1",
+        "plot_id": "p1",
+        "x": 23,
+        "y": 10,
+        "day": "2025-06-03",
+        "wet": true,
+        "selection_reason": "巡查优先关注地块"
+      },
+      {
+        "check_id": "c2",
+        "plot_id": "p2",
+        "x": 38,
+        "y": 10,
+        "day": "2025-06-03",
+        "wet": false,
+        "selection_reason": "巡查优先关注地块"
+      }
+    ]
+  },
+  "metadata": {
+    "kind": "本地合成领域资料",
+    "cutoff": "2025-09-09T00:00:00+00:00"
+  }
+}
