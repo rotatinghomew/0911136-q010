@@ -14,7 +14,16 @@ Python 3.11 及以上，业务运行仅使用标准库。构建工具及其依�
 python3 -m dispatch_scenarios.runner --output /tmp/dispatch_scenarios-summary.json
 ```
 
-当前能力是源码 `analysis.py` 定义的摘要，不会自动给出其他统计推断。输出中的 scope 说明边界，sources 记录资料依据。
+摘要包含两层结果：
+
+- `summary.days[].plots`：按同日优先级拼接瓦片后，精确分配到各地块的受淹、明确未受淹、
+  无覆盖、无有效观测和冲突面积，并给出 `wet_area_lower_m2` / `wet_area_upper_m2` 区间。
+- `summary.tiles`：逐瓦片原始累加，瓦片重叠会重复计算，仅供核对，不能作为地块面积。
+
+`summary.changes` 只在两日共同有效观测范围内比较受淹变化，并说明分类口径和分辨率是否可比；
+`summary.dispatch` 给出按面积证据排序的巡查线索，保留地块、栅格版本与面积上下界。
+这些内容均为本地合成记录的统计摘要，不接入地图或生产系统，不代替现场灾损认定。
+完整字段说明见 `docs/data-contract.md`。
 
 ## 分开运行供数与应用
 
